@@ -1,21 +1,22 @@
 import React from 'react';
 
 import './App.css';
-import Wrapper from "./components/Wrapper"
+
 import Header from "./components/Header"
-import Search from "./components/Search"
-import Table from "./components/Table"
+import Body from "./components/Body"
+import Container from "./components/Container"
 import logo from './logo.svg';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Wrapper>
-        <Header />
-        <Search />
-        <Table />  
-      </Wrapper>      
+      <Header />
+      <Container>
+          <Body />
+      </Container>
+  
     </div>
   );
 }
