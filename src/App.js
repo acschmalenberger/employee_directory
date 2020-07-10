@@ -5,7 +5,7 @@ import './App.css';
 import Header from "./components/Header"
 import Body from "./components/Body"
 import Container from "./components/Container"
-import logo from './logo.svg';
+
 
 
 

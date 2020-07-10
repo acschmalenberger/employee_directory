@@ -5,20 +5,20 @@ function TableRow(props) {
 
     return (
         <div>
-        {props.result.map(results =>(
             <tr>
-                <td>{results.picture.medium}</td>
-                <td>{results.name.first}</td>
-                <td>{results.name.last}</td>
-                <td>{results.cell}</td>
-                <td>{results.email}</td>
-                <td>{results.login.username}</td>
+                <td>{props.result.picture.medium}</td>
+                <td>{props.result.name.first}</td>
+                <td>{props.result.name.last}</td>
+                <td>{props.result.cell}</td>
+                <td>{props.result.email}</td>
+                <td>{props.result.login.username}</td>
             </tr>
-        ))}
         </div>
 
     )
 
 };
+//employee.map? row.map... sometihing
+
 
 export default TableRow

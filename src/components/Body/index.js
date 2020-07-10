@@ -11,7 +11,8 @@ class Body extends Component {
     state = {
         data: this.employeeData,
         search: "",
-        filterList: []
+        filterList: [],
+        result: []
     };
 
     componentDidMount() {
@@ -57,7 +58,21 @@ class Body extends Component {
                     <TableHeader />
 
                     <tbody>
-                        <TableRow />
+                        {this.state.result.map(item => {
+                            return(<TableRow
+                                //result is prop being passed to tablerow
+                                //"result" must be refermced in table row to effectively pass it
+                                result = {item}
+                                // picture={results.picture.medium}
+                                // firstName={results.name.first}
+                                // lastName={results.name.last}
+                                // cell={results.cell}
+                                // email={results.email}
+                                // username={results.login.username}
+                                />
+                                )
+                        })}
+                    
                         
                     </tbody>
                     
